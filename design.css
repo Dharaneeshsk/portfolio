@@ -1,0 +1,680 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 999;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #206951;
+  }
+  
+  .active {
+    background-color: #3c3469;
+  }
+.firstpage{
+    text-align: center;
+    color: bisque;
+}
+  
+#aboutme{
+    margin: left;
+    padding-left: 40px;
+    color: #e5e4ee;
+    margin-bottom: 0px;
+}
+.flex-container {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 40%; */
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* .flex-container > div {
+    background-color: #f1f1f1;
+    width: 40px;
+    height: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 30px;
+  } */
+  #aboutme img{
+     width: 200px;
+     margin-left: 20px;
+     height: 200px;
+  }
+  .aboutcontant{
+    height: 70%;
+    width: 80%;
+    margin-left: 100px;
+    padding: 5px;
+    color: #e2e0ec;
+    /* padding-top: 800px; */
+  }
+ #eduction{
+    padding: 40px;
+    color: #e2e0ec;
+ }
+ /* image size automatically resize */
+ img{ width: 100%;
+  height: 100%;
+  object-fit: contain;
+ }
+/* letter design */
+
+
+
+/* letter design end */
+
+ /* time line code starts */
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    /* padding-bottom: 200px; */
+    
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 40%;
+    
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 1%;
+    
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 0px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -10px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: rgb(252, 255, 255);
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  .content:hover{
+    background-color: #04AA6D;
+  }
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 30px;
+    }
+    
+    /* Full-width containers */
+    .container {
+    width: 50%;
+    padding-left: 85px;
+    padding-right: 35px;
+    }
+    
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
+  /* time line code ends */
+  #project{
+    padding: 40px;
+    color: #e2e0ec;
+ }
+
+ .newcontainer {
+  margin: auto;
+  width: 50%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.skillsize{
+  text-align: center;
+
+  padding: 15px;
+
+    color: #ecebf0;
+}
+
+.html {width: 80%; background-color: #04AA6D;}
+.css {width: 70%; background-color: #2196F3;}
+.C {width: 80%; background-color: #f44336;}
+.CPP {width: 80%; background-color: #0ea01abe;}
+.JAVA {width: 30%; background-color: #1f096e;}
+.antenna {width: 20%; background-color: #1ad623;}
+
+#skillsname{
+  padding: 40px;
+  color: #e2e0ec;
+}
+.flex-container {
+  /* display: flex;
+  width: 100%;
+  height: 20px; */
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.projectdesc{
+  position: sticky;
+  height:100%;
+  width: 100%;
+  margin-left: 100px;
+  padding: 5px;
+  color: #e2e0ec;
+}
+.projectimage{
+  /* width: 400px;
+  margin-left: 20px;
+  height: 300px;
+  padding-bottom: auto;
+  padding-left: 200px; */
+  width: 200px;
+     margin-left: 20px;
+     height: 200px;
+
+}
+.flex2-project {
+  /* display: flex;
+  /* flex-wrap: wrap; */
+  /* width: 100%;
+  /* height: 100%; */
+  padding-top: 100px; 
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.project2desc{
+  position: sticky;
+  height: 70%;
+  width: 80%;
+  margin-left: 100px;
+  padding: 5px;
+  color: #e2e0ec;
+}
+.project2image{
+  /* width: 400px;
+  margin-left: 20px;
+  height: auto;
+  padding-bottom: 150px;
+  padding-left: 200px; */
+  width: 200px;
+     margin-left: 20px;
+     height: 200px;
+}
+.flex3-project {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.project3desc{
+  position: sticky;
+  height: 70%;
+  width: 80%;
+  margin-left: 100px;
+  padding: 5px;
+  color: #e2e0ec;
+}
+.project3image{
+  /* width: 400px;
+  margin-left: 20px;
+  height: 300px;
+  padding-bottom: 150px;
+  padding-left: 200px; */
+  width: 200px;
+     margin-left: 20px;
+     height: 200px;
+}
+/* CONTACT */
+#contact{
+  padding: 100px;
+  padding-bottom: 400px;
+  color: #e2e0ec;
+}
+.contact-flux{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  color: #e2e0ec;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 2px; */
+}
+.contact-info img{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+
+/*  */
+.minihead{
+      align-items: center;
+      justify-content: center;
+      margin-left: 150px;
+}
+
+.flux-card {
+  padding-top: 00px; 
+  position: relative;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-left: 30%;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  margin: 100px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  align-items: center;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  align-items: center;
+}
+.flip-card-front img{
+  align-items: center;
+}
+
+
+
+
+
+
+
+.cont{
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+  background-color: #000000;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  margin-left: 150px;
+}
+
+.waviy {
+  position: sticky;
+}
+.waviy span {
+  position: sticky;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+
+
+/*  achievement design background */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800, 800i, 900&display=swap');
+
+.achivetotal{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+  /* margin:20px; */
+}
+@media only screen and (max-width: 600px) {
+  .achivetotal{
+    flex-direction: column;
+  }
+}
+
+.achieve {
+    padding: 0;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.achievementflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+}
+
+.containerachiev {
+    position: relative;
+}
+
+.containerachiev .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.containerachiev .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1ab62e79;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.containerachiev .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.containerachiev .card:after {
+    content: "SKD";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+
+.containerachievr .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.containerachiev .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(-25%);
+    /* bug  */
+}
+
+.containerachiev .card .imgBx img {
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(20deg); */
+    width: 270px;
+}
+
+.containerachiev .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 90;
+}
+
+.containerachiev .card:hover .contentBx {
+    height: 210px;
+}
+
+.containerachiev .card .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.containerachiev .card .contentBx .size,
+.containerachiev .card .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.containerachiev.card:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .5s;
+}
+
+.containerachiev .card:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .6s;
+}
+
+.containerachiev .card .contentBx .size h3,
+.containerachiev .card .contentBx .color h3 {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.containerachiev .card .contentBx .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: .5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.containerachiev .card .contentBx .size span:hover {  /* other bug */
+    background: #B90000;
+}
+
+.containerachiev .card .contentBx .color span {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.containerachiev .card .contentBx .color span:nth-child(2) {
+     background: #5e5b5e;
+}
+
+.containerachiev .card .contentBx .color span:nth-child(3) {
+     background: #1B2FE9;
+}
+
+.containerachiev .card .contentBx .color span:nth-child(4) {
+     background: #080481;
+}
+
+.containerachiev .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .5s;
+}
+
+.containerachiev .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: .7s;
+} 
+/* design end */
+
